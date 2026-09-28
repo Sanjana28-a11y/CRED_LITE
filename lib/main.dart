@@ -19,7 +19,6 @@ import 'theme.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Initialize Hive CE for lightweight key-value caching
   await Hive.initFlutter();
   final localStore = await LocalStore.open();
   final apiService = ApiService();
